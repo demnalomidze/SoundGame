@@ -1,0 +1,115 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #c4b2d6;
+}
+
+.conteiner {
+  display: grid;
+  grid-gap: 5vh;
+  height: auto;
+}
+
+.Red {
+  width: 120px;
+  height: 120px;
+  background-color: red;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 3px solid black;
+}
+
+.Red:hover {
+  background-color: rgb(180, 45, 45);
+}
+
+.Blue {
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 3px solid black;
+}
+
+.Blue:hover {
+  background-color: rgb(47, 47, 135);
+}
+
+.Yellow {
+  width: 120px;
+  height: 120px;
+  background-color: yellow;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 3px solid black;
+}
+
+.Yellow:hover {
+  background-color: rgb(163, 163, 81);
+}
+
+.Green {
+  width: 120px;
+  height: 120px;
+  background-color: green;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 3px solid black;
+}
+
+.Green:hover {
+  background-color: rgb(39, 91, 39);
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .Red {
+    width: 140px;
+    height: 140px;
+  }
+
+  .Blue {
+    width: 140px;
+    height: 140px;
+  }
+
+  .Yellow {
+    width: 140px;
+    height: 140px;
+  }
+
+  .Green {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .Red {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Blue {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Yellow {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Green {
+    width: 180px;
+    height: 180px;
+  }
+}
