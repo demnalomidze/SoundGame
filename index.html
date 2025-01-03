@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <div class="conteiner">
-      <div class="Red"></div>
-      <div class="Green"></div>
-      <div class="Yellow"></div>
-      <div class="Blue"></div>
+    <div class="box">
+      <h1 class="Head">Press A Key to Start</h1>
+      <div class="score">
+        <p id="score">Points: 0</p>
+      </div>
     </div>
+    <div class="container">
+      <button class="Red" onclick="playSound('red-sound')"></button>
+      <button class="Green" onclick="playSound('green-sound')"></button>
+      <button class="Yellow" onclick="playSound('yellow-sound')"></button>
+      <button class="Blue" onclick="playSound('blue-sound')"></button>
+    </div>
+
+    <audio id="red-sound" src="sound/sounds_red.mp3"></audio>
+    <audio id="green-sound" src="sound/sounds_green.mp3"></audio>
+    <audio id="yellow-sound" src="sound/sounds_yellow.mp3"></audio>
+    <audio id="blue-sound" src="sound/sounds_blue.mp3"></audio>
+    <audio id="wrong-sound" src="sound/sounds_wrong.mp3"></audio>
   </body>
 </html>

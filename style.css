@@ -5,12 +5,31 @@ body {
   height: 100vh;
   margin: 0;
   background: #c4b2d6;
+  font-family: "Press Start 2P", cursive;
 }
 
-.conteiner {
+.box {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  gap: 15px;
+}
+
+.score {
+  font-size: 20px;
+}
+
+.Head {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container {
   display: grid;
   grid-gap: 5vh;
   height: auto;
+  margin-top: 55px;
 }
 
 .Red {
@@ -22,10 +41,6 @@ body {
   border: 3px solid black;
 }
 
-.Red:hover {
-  background-color: rgb(180, 45, 45);
-}
-
 .Blue {
   width: 120px;
   height: 120px;
@@ -33,10 +48,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
   border: 3px solid black;
-}
-
-.Blue:hover {
-  background-color: rgb(47, 47, 135);
 }
 
 .Yellow {
@@ -48,10 +59,6 @@ body {
   border: 3px solid black;
 }
 
-.Yellow:hover {
-  background-color: rgb(163, 163, 81);
-}
-
 .Green {
   width: 120px;
   height: 120px;
@@ -61,12 +68,16 @@ body {
   border: 3px solid black;
 }
 
-.Green:hover {
-  background-color: rgb(39, 91, 39);
-}
-
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .Head {
+    font-size: 30px;
+  }
+
+  .score {
+    font-size: 30px;
+  }
+
+  .container {
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -93,6 +104,14 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  .Head {
+    font-size: 50px;
+  }
+
+  .score {
+    font-size: 50px;
+  }
+
   .Red {
     width: 180px;
     height: 180px;
